@@ -80,20 +80,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-head{
-  display: grid;
+  display: flex ;
+  flex-direction: row;
   align-items: center;
   grid-template-columns: 1fr 2fr 13fr 3fr;
   margin-top: 0px;
 }
 
+.container-head .img{
+  margin-left: 100px;
+}
+
 .container-head > div{
   text-align: center;
-  font-size: 15px;
+  font-size: 40px;
 }
 
 img{
-  max-width: 130%;
-  max-height: 130%;
+  max-width: 1250%;
+  max-height: 150%;
 }
 
 #header.header-scrolled {
@@ -110,12 +115,13 @@ img{
   font-family: "Poppins", sans-serif;
 }
 
+
 #header .logo a {
   color: #fff;
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 0px;
 }
 
 /*---------------------parallax effect after about------------*/
@@ -386,12 +392,14 @@ section {
   background: #3fbcc0a4;
 }
 #home video{
-  margin-top: -70px;
-  margin-left: 50PX;
-  height: 900px;
+  margin-top: -28px;
+  margin-left: -35px;
+  height: 780px;
+  width: 900px;
   position: absolute;
   top: 200px;
   left: 550px;
+  z-index: 2;
 }
 
 #home .btn-get-started:hover {
