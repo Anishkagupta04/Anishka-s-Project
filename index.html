@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
+ <link rel="shortcut icon" href="images/Screenshot 2024-05-18 at 10.12.21 PM.png" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="./style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
@@ -26,26 +26,17 @@
   <link href="style.css" rel="stylesheet">
   <link href="patient-portal.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-body {
-  padding: 25px;
-  background-color: white;
-  color: black;
-  font-size: 20px;
-}
 
-
-</style
 </head>
 
 <body>
-
- 
-
-
-
-  <!-- ############# Header ############# -->
+      <!-- ############# Header ############# -->
   
+      <header class="header_container">
+        <div class="img">
+        <img id="rd-logo"  style="width: 90px; height: auto;" src="/images/rd.png"> 
+      </div>
+      <div class="text" style="margin-left: -33rem;">
   
   <header id="header" class="fixed-top">
     
@@ -91,8 +82,37 @@ body {
     </div>
     <div class="wall"><video autoplay loop muted plays-inline><source src="2.mp4"></video></div>
   </section>
-  <!-- End Home -->
-  <br><br><br><br><br><br><br><br>
+=======
+        <h1 class="logo me-auto"><a style="text-decoration: none; color: #55a5ea;" href="index.html">RapiDoc</a></h1>
+      </div>
+      <nav class="nav_menu">
+
+        <ul class="nav_link">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="Html-Files/news.html">News</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#patient-portal">patient Portal</a></li>
+          <li><a href="#doctors">Doctor</a></li>
+          <li><a href="Html-Files/contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+      </div>
+    </header>
+
+
+  <div class="container">
+    <div class="content">
+      <h1 style="font-size: 65px;">
+        Welcome to <span style="color: #55a5ea;">RapiDoc!</span> <br /> Your one-stop digital <br> healthcare destination
+      </h1>
+      <h4>
+        <!-- <a href="#about" class="btn-get-started scrollto">Download App</a> -->
+      </h4>
+    </div>    
+    <img style="position: relative; top: -60px; right: -10rem;" class="sec-img" src="images/rd.png" alt="" />
+  </div>
+  <br><br><br><br><br>
   <main id="main">
 
    
@@ -160,7 +180,7 @@ body {
         <div class="row">
           <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center
      align-items-stretch position-relative">
-            <a href="https://youtu.be/ImQqQ9_s38k" class="glightbox play-btn mb-4"></a>
+            <!-- <a href="https://youtu.be/ImQqQ9_s38k" class="glightbox play-btn mb-4"></a> -->
           </div>
  <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch
      justify-content-center py-5 px-lg-5">
@@ -270,7 +290,7 @@ body {
             <div class="icon-box">
               <div class="icon"><i class="fas fa-pills"></i></div>
               <h4><a href="https://www.1mg.com">Pharmacy</a></h4>
-              <p>Get your prescribed medicins delivered at your doorstep.</p>
+              <p>Get your prescribed medicines delivered at your doorstep.</p>
             </div>
           </div>
 
@@ -353,51 +373,95 @@ body {
           <p>We listed the docs, we made you a form. You make us an appointment.</p><br><br>
         </div>
         <div class="layout">
-        <form accept="" role="form" class="php-email-form">
-          <div class="row">
-            <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
-            </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+          <form accept="" role="form" class="php-email-form">
+  <div class="row">
+    <div class="col-md-4 form-group">
+      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
+    </div>
+    <div class="col-md-4 form-group mt-3 mt-md-0">
+      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+    </div>
+    <div class="col-md-4 form-group mt-3 mt-md-0">
+      <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 form-group mt-3">
+      <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date">
+    </div>
+    <div class="col-md-4 form-group mt-3">
+      <select name="age" id="age" class="form-select">
+        <option value="">Select Age</option>
+        <option value="Department 1">18 or below</option>
+        <option value="Department 2">18 to 55</option>
+        <option value="Department 3">55 above</option>
+      </select>
+    </div>
+    <div class="col-md-4 form-group mt-3">
+      <select name="doctor" id="doctor" class="form-select">
+        <option value="">Your Location</option>
+        <option value="Doctor 1">Mumbai</option>
+        <option value="Doctor 2">Delhi</option>
+        <option value="Doctor 3">Chennai</option>
+        <!-- Add more locations as needed -->
+      </select>
+    </div>
+  </div>
 
-            </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone">
+  <!-- Time Slot Section -->
+  <div class="row">
+    <div class="col-md-12 form-group mt-3">
+     
+      <select name="time-slot" id="time-slot" class="form-select">
+        <option value="">Select Time Slot</option>
+        <!-- Populate with available time slots -->
+        <option value="9:00 AM">9:00 AM</option>
+        <option value="11:00 AM">11:00 AM</option>
+        <option value="2:00 PM">2:00 PM</option>
+        <!-- Add more time slots as needed -->
+      </select>
+    </div>
+  </div>
 
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 form-group mt-3">
-              <input type="datetime" name="date" class="form-control datepicker" id="date"
-                placeholder="Appointment Date">
+  <!-- Hospital Selection Section -->
+  <div class="row">
+    <div class="col-md-12 form-group mt-3">
+     
+      <select name="hospital" id="hospital" class="form-select">
+        <option value="">Select Hospital</option>
+        <!-- Populate with available hospitals -->
+        <option value="Hospital 1">Hospital 1</option>
+        <option value="Hospital 2">Hospital 2</option>
+        <option value="Hospital 3">Hospital 3</option>
+        <!-- Add more hospitals as needed -->
+      </select>
+    </div>
+  </div>
 
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="age" id="age" class="form-select">
-                <option value="">Select Age</option>
-                <option value="Department 1">18 or below</option>
-                <option value="Department 2">18 to 55</option>
-                <option value="Department 3">55 above</option>
-              </select>
+  <!-- OPD Section -->
+  <div class="row">
+    <div class="col-md-12 form-group mt-3">
+      
+      <select name="opd-section" id="opd-section" class="form-select">
+        <option value="">Select OPD Section</option>
+        <!-- Populate with available OPD sections -->
+        <option value="ENT">ENT</option>
+        <option value="Gynecologist">Gynecologist</option>
+        <!-- Add more OPD sections as needed -->
+      </select>
+    </div>
+  </div>
 
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="doctor" id="doctor" class="form-select">
-                <option value="">Your Location</option>
-                <option value="Doctor 1">1</option>
-                <option value="Doctor 2">2</option>
-                <option value="Doctor 3">3</option>
-              </select>
-            </div>
-          </div>
+  <div class="form-group mt-3">
+    <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+  </div>
+  <div class="text-center">
+    <a href="successful_appointment.html" style="text-decoration: none;">
+      <button type="submit">Make an Appointment</button>
+    </a>
+  </div>
+</form>
 
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
-
-          </div>
-          <div class="text-center"><a href="successful_appointment.html" style="text-decoration: none;"><button type="submit">Make an Appointment</button></a></div>
-        </form>
         </div>
 
       </div>
@@ -456,6 +520,16 @@ body {
               <div class="pic"><img src="img/doctors/4.png" class="img-fluid" alt="" style="width: 188px; height: 188px;"></div>
               <div class="member-info">
                 <h4>ENT</h4>
+                <br>
+                <div class="nxt-pg"><a href="Html-Files/doc.html"><button type="">Appoint a Doctor</button></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="img/doctors/Image(13).png" class="img-fluid" alt="" style="width: 188px; height: 188px;"></div>
+              <div class="member-info">
+                <h4>Pediatrician</h4>
                 <br>
                 <div class="nxt-pg"><a href="Html-Files/doc.html"><button type="">Appoint a Doctor</button></a></div>
               </div>
@@ -597,74 +671,89 @@ body {
 
  
   <!-- ############### Footer ############### -->
- 
- 
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
 
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">
-              <h3>RapiDoc</h3>
-              <p>
-                Address<br>
-                Delhi, India<br><br>
-                <strong>Phone:</strong> <i class="bi bi-phone"></i><a href="tel:+91 1234567890">+91 1234567890</a><br>
-                <strong>Email:</strong> <a href="mailto:rapidoc@mail.com">rapidoc@mail.com</a>
-                <br>
-              </p>
-              <div class="social-links mt-3">
-                <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#" class="google-plus"><i class="fa-brands fa-skype"></i></a>
-                <a href="#" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#doctor">Doctors</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Html-Files/contact.html">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Location Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Online OPDs</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Availability Status</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Pharmacy Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">User Benefits</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Daily Newsletter</h4>
-            <p>Get your medical insights! Subscribe to our newsletters now!</p>
-            <form action="" method="post">
-              <input type="email" name="email" placeholder="Email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div>
-
+  <footer>
+    <div class="row">
+      <!-- map -->
+      <div class="col" id="col1">
+        <div class="contact-location">
+          <!-- <img style="height: 100%;;" src="img/home icon.webp" alt="" class="logo"> -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.8055368048804!2d77.22981385036265!3d28.6655407892513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd0683919c3b%3A0xf5fc331b74c2b9e2!2sIndira%20Gandhi%20Delhi%20Technical%20University%20for%20Women!5e0!3m2!1sen!2sin!4v1679424592719!5m2!1sen!2sin"
+            width="100%" height="200px" style="border: 0; padding: 2rem 2em 0 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
+      <!-- map -->
+
+      <!-- contact -->
+      <div class="col" id="col2">
+        <h3>
+          Contact
+          <div class="underline"><span></span></div>
+        </h3>
+
+        <p><a href="">contact@rapidoc.com</a></p>
+        <p><a href="">+91 1234567890</a></p>
+      </div>
+      <!-- contact -->
+
+      <!-- Links -->
+      <div class="col" id="col3">
+        <h3>
+          Quick Links
+          <div class="underline"><span></span></div>
+        </h3>
+        <div class="quick-links" id="bottom">
+          <!-- <div class="footer-title">
+                        QUICK LINKS
+                    </div> -->
+          <div class="quick-links-info">
+            <div><a href="./index.html">Home</a></div>
+            <div><a href="#about">About us</a></div>
+            <div><a href="./Html-Files/contact.html">Contact us</a></div>
+            <div><a href="#services">Services</a></div>
+            <div><a href="#doctors">Doctors</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- links -->
+
+      <div class="col" id="col4">
+        <h3>
+            SOCIAL
+            <div class="underline"><span></span></div>
+        </h3>
+        <div class="social-icons">
+            
+            <div class="social">
+                <a href="#" target="_blank"><img
+                        src="#" alt="">Instagram</a>
+
+            </div>
+            <div class="social">
+                <a href="#" target="_blank"><img
+                        src="" alt="">LinkedIn</a>
+
+            </div>
+            <div class="social">
+                <a href="#"><img src="" alt=""> Facebook</a>
+
+            </div>
+        </div>
+    </div>
     </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>RapiDoc</span></strong>. All Rights Reserved
-      </div>
+    <!-- Copyright -->
+    <div id="copyright" style="text-align: center;">
+      <p style="align-items: center;">
+        © Copyright &nbsp; <span> RapiDoc </span> &nbsp; | All Rights
+        Reserved
+      </p>
+      <p>Designed by RapiDoc</p>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
+
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
